@@ -20,3 +20,14 @@ donationBtn.addEventListener('click', function(){
         "border-none"
     )
 })
+
+document.getElementById('history-btn').addEventListener('click',function(){
+    document.getElementById('card-section').classList.add('hidden');
+})
+
+
+document.getElementById('donation-btn').addEventListener('click',function(){
+    document.getElementById('card-section').classList.remove('hidden');
+})
+
+

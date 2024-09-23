@@ -23,9 +23,9 @@
         <div class="navbar">
             <div class="navbar-start">
                 <div>
-                   <a href="./blog.html">
-                    <button class="btn bg-[#B4F461] border-none">Blog</button>
-                   </a>
+                    <a href="./blog.html">
+                        <button class="btn bg-[#B4F461] border-none">Blog</button>
+                    </a>
                 </div>
             </div>
             <div class="navbar-center hidden md:block">
@@ -43,88 +43,124 @@
                 <span class="text-xl">BDT</span>
             </div>
         </div>
-</header>
-<main >
-    <!-- main buttons -->
-    <section class="sticky top-28 z-10 bg-white p-3"> 
-        <div class="flex justify-center space-x-5  ">
-            <button id="donation-btn" class="btn bg-[#B4F461] border-none">Donation</button>
-            <button id="history-btn" class="btn border-gray-300">History</button>
-        </div>
-    </section>
-    <!-- cards -->
-    <section class="container mx-auto space-y-5">
-        
-        <!-- card 1 -->
-        <div class="card card-side bg-base-100 shadow-xl grid grid-cols-1 md:grid-cols-2">
-            <!-- card image -->
-            <figure class="flex-1 p-5">
-                <img
-                    src="./images/noakhali.png"
-                    alt="flood image" class="w-10/12" />
-            </figure>
-            <!-- card body -->
-        <div class="card-body flex-1 py-16">
-        <div class="flex space-x-3">
-            <img src="./images/coin.png" alt="">
-        <div  id="main-balance" class="stat-value text-xl">00000</div>
-            <span class="text-xl">BDT</span>
-        </div>
-            <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
-            <p class="text-gray-600"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-            <input id="add-money" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
-        <div class="card-actions ">
-             <button id="donate-btn-noakhali" class="btn bg-[#B4F461] w-full">Donate Now</button>
-        </div>
-        </div>
-        </div>
-        <!-- card  2-->
-        <div class="card card-side bg-base-100 shadow-xl grid grid-cols-1 md:grid-cols-2">
-            <!-- card image -->
-            <figure class="flex-1 p-5">
-                <img
-                    src="./images/feni.png"
-                    alt="flood image" class="w-10/12"/>
-            </figure>
-            <!-- card body -->
-        <div class="card-body flex-1 py-16">
-        <div class="flex space-x-3">
-            <img src="./images/coin.png" alt="">
-        <div id="feni-balance" class="stat-value text-xl">00000</div>
-            <span class="text-xl">BDT</span>
-        </div>
-            <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
-            <p class="text-gray-600"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-            <input id="from-feni" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
-        <div class="card-actions ">
-             <button id="donate-btn-feni" class="btn bg-[#B4F461] w-full">Donate Now</button>
-        </div>
-        </div>
-        </div>
-        <!-- card 3-->
-        <div class="card card-side bg-base-100 shadow-xl grid grid-cols-1 md:grid-cols-2">
-            <!-- card image -->
-            <figure class="flex-1 p-5">
-                <img
-                    src="./images/quota-protest.png"
-                    alt="flood image" class="w-10/12"/>
-            </figure>
-            <!-- card body -->
-        <div class="card-body flex-1 py-16">
-        <div class="flex space-x-3 ">
-            <img src="./images/coin.png" alt="">
-        <div class="stat-value text-xl">00000</div>
-            <span class="text-xl">BDT</span>
-        </div>
-            <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
-            <p class="text-gray-600"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-            <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
-        <div class="card-actions ">
-             <button class="btn bg-[#B4F461] w-full">Donate Now</button>
-        </div>
-        </div>
-        </div>
-    </section>
+    </header>
+    <main>
+        <!-- main buttons -->
+        <section class="sticky top-28 z-10 bg-white p-3">
+            <div class="flex justify-center space-x-5  ">
+                <button id="donation-btn" class="btn bg-[#B4F461] border-none">Donation</button>
+                <button id="history-btn" class="btn border-gray-300">History</button>
+            </div>
+        </section>
+        <!-- cards -->
+        <section id="card-section" class="container mx-auto space-y-5">
+
+            <!-- card 1 -->
+            <div   class="card card-side bg-base-100 shadow-xl grid grid-cols-1 md:grid-cols-2">
+                <!-- card image -->
+                <figure class="flex-1 p-5">
+                    <img src="./images/noakhali.png" alt="flood image" class="w-10/12" />
+                </figure>
+                <!-- card body -->
+                <div class="card-body flex-1 py-16">
+                    <div class="flex space-x-3">
+                        <img src="./images/coin.png" alt="">
+                        <div id="main-balance" class="stat-value text-xl">00000</div>
+                        <span class="text-xl">BDT</span>
+                    </div>
+                    <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p class="text-gray-600"> The recent floods in Noakhali have caused significant damage to homes
+                        infrastructure. Your donation will help provide essential supplies and to those affected by this
+                        disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                        relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input id="add-money" type="number" placeholder="Write Donation Amount"
+                        class="input input-bordered w-full " />
+                    <div class="card-actions ">
+                        
+                        <button id="donate-btn-noakhali" class="btn bg-[#B4F461] w-full">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card  2-->
+            <div class="card card-side bg-base-100 shadow-xl grid grid-cols-1 md:grid-cols-2">
+                <!-- card image -->
+                <figure class="flex-1 p-5">
+                    <img src="./images/feni.png" alt="flood image" class="w-10/12" />
+                </figure>
+                <!-- card body -->
+                <div class="card-body flex-1 py-16">
+                    <div class="flex space-x-3">
+                        <img src="./images/coin.png" alt="">
+                        <div id="feni-balance" class="stat-value text-xl">00000</div>
+                        <span class="text-xl">BDT</span>
+                    </div>
+                    <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+                    <p class="text-gray-600"> The recent floods in Noakhali have caused significant damage to homes
+                        infrastructure. Your donation will help provide essential supplies and to those affected by this
+                        disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                        relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input id="from-feni" type="number" placeholder="Write Donation Amount"
+                        class="input input-bordered w-full " />
+                        <div class="card-actions ">
+
+
+                            <button id="donate-btn-feni" class="btn w-full bg-[#B4F461]" onclick="my_modal_1.showModal()">open modal</button>
+                            <dialog id="my_modal_1" class="modal">
+                              <div class="modal-box">
+                                <h3 class="text-lg font-bold">Hello!</h3>
+                                <p class="py-4">Press ESC key or click the button below to close</p>
+                                <div class="modal-action">
+                                  <form method="dialog">
+                                  
+                                    <button class="btn">Close</button>
+                                  </form>
+                                </div>
+                              </div>
+                            </dialog>
+                            
+                        </div>
+                </div>
+            </div>
+            <!-- card 3-->
+            <div class="card card-side bg-base-100 shadow-xl grid grid-cols-1 md:grid-cols-2">
+                <!-- card image -->
+                <figure class="flex-1 p-5">
+                    <img src="./images/quota-protest.png" alt="flood image" class="w-10/12" />
+                </figure>
+                <!-- card body -->
+                <div class="card-body flex-1 py-16">
+                    <div class="flex space-x-3 ">
+                        <img src="./images/coin.png" alt="">
+                        <div id="injured-add-money" class="stat-value text-xl">00000</div>
+                        <span class="text-xl">BDT</span>
+                    </div>
+                    <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+                    <p class="text-gray-600"> The recent floods in Noakhali have caused significant damage to homes
+                        infrastructure. Your donation will help provide essential supplies and to those affected by this
+                        disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                        relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input id="injured-balance" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full " />
+                    <div class="card-actions ">
+                        
+                        <button id="injured-btn" class="btn w-full bg-[#B4F461]" onclick="my_modal_5.showModal()">Donate Now</button>
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <div class="modal-box text-center space-y-4">
+                                <h3 class="text-2xl font-bold">Congrates!</h3>
+                               <img src="./images/coin.png" alt="" class="mx-auto">
+                                <p class="py-4">You Have Donated For Humankind</p>
+                                <h2 class="text-2xl font-bold">Successfully</h2>
+
+                                <div class="modal-action">
+                                    <form method="dialog">
+                                        <button class="btn">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </main>
