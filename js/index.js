@@ -26,10 +26,10 @@ document.getElementById('donate-btn-noakhali')
         if (!isNaN(moneyFormNoakhali) && moneyFormNoakhali > 0) {
             const balance = getTextFieldValueById('main-balance');
             const newBalance = balance + moneyFormNoakhali;
-            document.getElementById('main-balance').innerText = newBalance.toFixed(0);
+            document.getElementById('main-balance').innerText = newBalance.toFixed(2);
             const decreaseMoney = getTextFieldValueById2('balance');
             const decreaseInMoney = decreaseMoney - moneyFormNoakhali
-            document.getElementById('balance').innerText = decreaseInMoney.toFixed(0);
+            document.getElementById('balance').innerText = decreaseInMoney.toFixed(2);
             // history part
             const historyItem = document.createElement("div");
             historyItem.innerHTML = `
@@ -54,10 +54,10 @@ document.getElementById('donate-btn-feni')
         if (!isNaN(moneyFromFeni) && moneyFromFeni > 0) {
             const balance = getTextFieldValueById('feni-balance');
             const newBalance = balance + moneyFromFeni;
-            document.getElementById('feni-balance').innerText = newBalance.toFixed(0);
+            document.getElementById('feni-balance').innerText = newBalance.toFixed(2);
             const decreaseMoney = getTextFieldValueById2('balance');
             const decreaseInMoney = decreaseMoney - moneyFromFeni
-            document.getElementById('balance').innerText = decreaseInMoney.toFixed(0);
+            document.getElementById('balance').innerText = decreaseInMoney.toFixed(2);
             // history part
             const historyItem = document.createElement("div");
             historyItem.innerHTML = `
@@ -85,10 +85,10 @@ document.getElementById('injured-btn')
         if (!isNaN(injuredMoney) && injuredMoney > 0 ) {
             const balance = getTextFieldValueById('injured-add-money');
             const newBalance = balance + injuredMoney;
-            document.getElementById('injured-add-money').innerText = newBalance.toFixed(0);
+            document.getElementById('injured-add-money').innerText = newBalance.toFixed(2);
             const decreaseMoney = getTextFieldValueById2('balance');
             const decreaseInMoney = decreaseMoney - injuredMoney
-            document.getElementById('balance').innerText = decreaseInMoney.toFixed(0);
+            document.getElementById('balance').innerText = decreaseInMoney.toFixed(2);
             // history part
             const historyItem = document.createElement("div");
             historyItem.innerHTML = `
