@@ -33,7 +33,7 @@ document.getElementById('donate-btn-noakhali')
             // history part
             const historyItem = document.createElement("div");
             historyItem.innerHTML = `
-                <p class="text-xl lg:text-3xl font-bold mb-1 "> ${moneyFormNoakhali} Taka is donated for Flood at Noakhali, Bangladesh </p>
+                <p class="text-xl lg:text-3xl font-bold mb-3 "> ${moneyFormNoakhali} Taka is donated for Flood at Noakhali, Bangladesh </p>
                 <p class= " text-gray-600 border-b-2 border-gray-200"> ${new Date()} </p>
             `
             const historyContainer = document.getElementById('history-content');
@@ -61,7 +61,7 @@ document.getElementById('donate-btn-feni')
             // history part
             const historyItem = document.createElement("div");
             historyItem.innerHTML = `
-                <p class="text-xl lg:text-3xl font-bold mb-1"> ${moneyFromFeni} Taka is donated Flood Relief in Feni,Bangladesh</p>
+                <p class="text-xl lg:text-3xl font-bold mb-3"> ${moneyFromFeni} Taka is donated Flood Relief in Feni,Bangladesh</p>
                 <p class= " text-gray-600
                 border-b-2 border-gray-200"> ${new Date()} </p>
             `
@@ -92,7 +92,7 @@ document.getElementById('injured-btn')
             // history part
             const historyItem = document.createElement("div");
             historyItem.innerHTML = `
-                <p class="text-xl lg:text-3xl font-bold"> ${injuredMoney} Taka is donated for Injured in the Quota Movement </p>
+                <p class="text-xl lg:text-3xl font-bold mb-3"> ${injuredMoney} Taka is donated for Injured in the Quota Movement </p>
                 <p class= " text-gray-600 border-b-2 border-gray-200"> ${new Date()} </p>
             `
             const historyContainer = document.getElementById('history-content');
