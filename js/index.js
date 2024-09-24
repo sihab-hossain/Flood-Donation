@@ -19,11 +19,15 @@ function getTextFieldValueById2(id) {
     return textNumber;
 }
 
+// top balance
+const topBalance = getTextFieldValueById2('balance')
+console.log(topBalance);
+
 // card 1 
 document.getElementById('donate-btn-noakhali')
     .addEventListener('click', function () {
         const moneyFormNoakhali = getInputFieldValueById('add-money');
-        if (!isNaN(moneyFormNoakhali) && moneyFormNoakhali > 0) {
+        if (!isNaN(moneyFormNoakhali) && moneyFormNoakhali > 0 && moneyFormNoakhali <= topBalance) {
             const balance = getTextFieldValueById('main-balance');
             const newBalance = balance + moneyFormNoakhali;
             document.getElementById('main-balance').innerText = newBalance.toFixed(2);
@@ -51,7 +55,7 @@ document.getElementById('donate-btn-feni')
         event.preventDefault();
         const moneyFromFeni = getInputFieldValueById('from-feni');
 
-        if (!isNaN(moneyFromFeni) && moneyFromFeni > 0) {
+        if (!isNaN(moneyFromFeni) && moneyFromFeni > 0 && moneyFromFeni <= topBalance) {
             const balance = getTextFieldValueById('feni-balance');
             const newBalance = balance + moneyFromFeni;
             document.getElementById('feni-balance').innerText = newBalance.toFixed(2);
@@ -82,7 +86,7 @@ document.getElementById('injured-btn')
         event.preventDefault();
         const injuredMoney = getInputFieldValueById('injured-balance');
 
-        if (!isNaN(injuredMoney) && injuredMoney > 0 ) {
+        if (!isNaN(injuredMoney) && injuredMoney > 0 && injuredMoney <= topBalance) {
             const balance = getTextFieldValueById('injured-add-money');
             const newBalance = balance + injuredMoney;
             document.getElementById('injured-add-money').innerText = newBalance.toFixed(2);
