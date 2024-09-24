@@ -9,6 +9,7 @@ historyBtn.addEventListener('click', function(){
     donationBtn.classList.remove(
         "bg-[#B4F461]",
     )
+    document.getElementById('history-content').classList.remove('hidden')
 })
 
 donationBtn.addEventListener('click', function(){
@@ -19,6 +20,7 @@ donationBtn.addEventListener('click', function(){
         "bg-[#B4F461]",
         "border-none"
     )
+    document.getElementById('history-content').classList.add('hidden')
 })
 
 document.getElementById('history-btn').addEventListener('click',function(){

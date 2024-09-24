@@ -30,9 +30,18 @@ document.getElementById('donate-btn-noakhali')
             const decreaseMoney = getTextFieldValueById2('balance');
             const decreaseInMoney = decreaseMoney - moneyFormNoakhali
             document.getElementById('balance').innerText = decreaseInMoney.toFixed(0);
+            // history part
+            const historyItem = document.createElement("div");
+            historyItem.innerHTML = `
+                <p class="text-xl lg:text-3xl font-bold mb-1 "> ${moneyFormNoakhali} Taka is donated for Flood at Noakhali, Bangladesh </p>
+                <p class= " text-gray-600 border-b-2 border-gray-200"> ${new Date()} </p>
+            `
+            const historyContainer = document.getElementById('history-content');
+            historyContainer.insertBefore(historyItem, historyContainer.firstChild);
         }
         else {
             alert('Failed to Donate money');
+            document.getElementById('my_modal_5').close();
         }
     })
 
@@ -49,7 +58,15 @@ document.getElementById('donate-btn-feni')
             const decreaseMoney = getTextFieldValueById2('balance');
             const decreaseInMoney = decreaseMoney - moneyFromFeni
             document.getElementById('balance').innerText = decreaseInMoney.toFixed(0);
-            
+            // history part
+            const historyItem = document.createElement("div");
+            historyItem.innerHTML = `
+                <p class="text-xl lg:text-3xl font-bold mb-1"> ${moneyFromFeni} Taka is donated Flood Relief in Feni,Bangladesh</p>
+                <p class= " text-gray-600
+                border-b-2 border-gray-200"> ${new Date()} </p>
+            `
+            const historyContainer = document.getElementById('history-content');
+            historyContainer.insertBefore(historyItem, historyContainer.firstChild);
         }
         else {
             alert('Failed to Donate money');
@@ -72,16 +89,22 @@ document.getElementById('injured-btn')
             const decreaseMoney = getTextFieldValueById2('balance');
             const decreaseInMoney = decreaseMoney - injuredMoney
             document.getElementById('balance').innerText = decreaseInMoney.toFixed(0);
-            
+            // history part
+            const historyItem = document.createElement("div");
+            historyItem.innerHTML = `
+                <p class="text-xl lg:text-3xl font-bold"> ${injuredMoney} Taka is donated for Injured in the Quota Movement </p>
+                <p class= " text-gray-600 border-b-2 border-gray-200"> ${new Date()} </p>
+            `
+            const historyContainer = document.getElementById('history-content');
+            historyContainer.insertBefore(historyItem, historyContainer.firstChild);
         }
         else {
             alert('Failed to Donate money');
-            document.getElementById('my_modal_5').close();
+            document.getElementById('my_modal_3').close();
         }
 
     })
 
-// history create
 
 
 
